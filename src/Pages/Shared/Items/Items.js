@@ -3,7 +3,7 @@ import React from 'react';
 const Items = () => {
     return (
         <div>
-            <h2>Items are:</h2>
+            <h2>This is items</h2>
         </div>
     );
 };

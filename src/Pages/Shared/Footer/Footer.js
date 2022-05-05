@@ -12,7 +12,7 @@ const Footer = () => {
           />
         </div>
         <Card.Text className="align-items-center text-center text-white">
-          Copyright: 2022
+          Copyright @ 2022
           <script>document.write(new Date().getFullYear())</script>
         </Card.Text>
       </Card.Body>

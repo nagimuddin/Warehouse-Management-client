@@ -1,17 +1,16 @@
 import React from "react";
 import { Card } from "react-bootstrap";
+import bike from '../../../images/bikes-bennar.jpg';
 
 const Bennar = () => {
   return (
-    <Card className="bg-dark text-white">
-      <Card.Img src="holder.js/100px270" alt="Card image" />
+    <Card className="mt-3">
+      <Card.Img src={bike} className="mw-100" alt="" />
       <Card.ImgOverlay>
-        <Card.Title>Card title</Card.Title>
-        <Card.Text>
-          This is a wider card with supporting text below as a natural lead-in
-          to additional content. This content is a little bit longer.
+        <Card.Title className="text-danger">BMW T9034 RX</Card.Title>
+        <Card.Text className="text-info">
+        SPORTINESS AT MAXIMUM POWER
         </Card.Text>
-        <Card.Text>Last updated 3 mins ago</Card.Text>
       </Card.ImgOverlay>
     </Card>
   );

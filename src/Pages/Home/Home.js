@@ -1,12 +1,12 @@
 import React from 'react';
-import Footer from '../Shared/Footer/Footer';
-import Header from '../Shared/Header/Header';
+import Bennar from '../Shared/Bennar/Bennar';
+import Items from '../Shared/Items/Items';
 
 const Home = () => {
     return (
         <div>
-            <Header></Header>
-            <Footer></Footer>
+            <Bennar></Bennar>
+            <Items></Items>
         </div>
     );
 };
