@@ -36,7 +36,7 @@ const AddItems = () => {
         <input className="mb-2" type="text" name="name" placeholder="Year"  required/>
         <input className="mb-2" type="number" name="name" placeholder="Price"  required/>
         <input className="mb-2" type="text" name="discription" placeholder="About" required />
-        <input className="button" type="submit" value="Add Items" />
+        <input className="additem-button" type="submit" value="Add Items" />
       </form>
     </div>
   );

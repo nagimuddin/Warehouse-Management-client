@@ -16,8 +16,8 @@ const Item = ({ item }) => {
         <small>About: {about}</small>
       </p>
       <div className="button">
-        <Link to="/checkout">
-          <button>Proceed Checkout</button>
+        <Link to="/items">
+         
         </Link>
       </div>
     </div>

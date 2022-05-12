@@ -13,9 +13,6 @@ import Header from "./Pages/Shared/Header/Header";
 import Items from "./Pages/Items/Items";
 import ItemDetails from "./Pages/ItemDetails/ItemDetails";
 import Register from "./Pages/Login/Register/Register";
-import CheckOut from "./Pages/CheckOut/CheckOut";
-import Item from "./Pages/Item/Item";
-
 
 function App() {
   return (
@@ -23,17 +20,27 @@ function App() {
       <Header></Header>
       <Routes>
         <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/items" element={<Items></Items>}></Route>
-        <Route path="/item" element={<Item></Item>}></Route>
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
-        <Route path="/Item/:itemId" element={<ItemDetails></ItemDetails>}></Route>
-        <Route path="/manageItems"element={<ManageItems></ManageItems>}></Route>
-        <Route path="/additems"element={<AddItems></AddItems>}></Route>
-        <Route path="/checkout"element={
+        <Route path="/items"element={
             <RequireAuth>
-              <CheckOut></CheckOut>
+              <Items></Items>
+            </RequireAuth>
+          }></Route>
+        <Route path="/add-item"element={
+            <RequireAuth>
+              <AddItems></AddItems>
+            </RequireAuth>
+          }></Route>
+        <Route path="/item/:itemId"element={
+            <RequireAuth>
+              <ItemDetails></ItemDetails>
+            </RequireAuth>
+          }></Route>
+        <Route path="/manage-items"element={
+            <RequireAuth>
+              <ManageItems></ManageItems>
             </RequireAuth>
           }></Route>
           <Route path="*" element={<NotFound></NotFound>}></Route>
