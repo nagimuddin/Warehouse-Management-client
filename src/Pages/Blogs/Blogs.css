@@ -1,0 +1,8 @@
+.blog-section{
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgb(173, 243, 255);
+}
