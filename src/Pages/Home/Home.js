@@ -1,6 +1,6 @@
 import React from 'react';
 import Bennar from '../Shared/Bennar/Bennar';
-import Items from '../Shared/Items/Items';
+import Items from '../Items/Items';
 
 const Home = () => {
     return (

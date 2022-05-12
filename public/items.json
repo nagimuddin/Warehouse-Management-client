@@ -1,56 +1,30 @@
 [
   {
     "_id": "6274be74602fb91f3f0e5e8e",
-    "price": "$1,466.02",
+    "price": "$5,200",
     "img": "https://buthydro.sirv.com/images/bikes-1.jpg",
-    "age": 25,
-    "name": "West Guerrero",
-    "company": "UPDAT",
-    "about": "Tempor cillum do aliquip ullamco qui culpa dolore voluptate minim enim duis sint ullamco. Reprehenderit ut in tempor in tempor incididunt reprehenderit exercitation cupidatat ea. Nisi mollit ad anim laboris ut ut exercitation labore magna sint nostrud aliquip consectetur adipisicing.\r\n"
+    "year": 2021,
+    "name": "BMW T9034 RX",
+    "powerdBy": "BMW",
+    "about": "The greatest combinetion of smartness,power and prefiction."
   },
   {
     "_id": "6274be7448b01c184ba73b9f",
-    "price": "$3,948.14",
+    "price": "$2,000",
     "img": "https://buthydro.sirv.com/images/bikes-2.jpg",
-    "age": 30,
-    "name": "Hernandez Calderon",
-    "company": "ZANILLA",
-    "about": "Nulla incididunt tempor eu veniam ullamco quis consequat cillum reprehenderit labore duis incididunt excepteur. Laboris cillum ea elit ut magna fugiat pariatur officia ad adipisicing qui est in. Aliquip Lorem commodo ullamco elit ad nostrud sunt fugiat laborum adipisicing. Ipsum ea ullamco nostrud deserunt excepteur commodo ex et velit tempor.\r\n"
+    "year": 2021,
+    "name": "YAMAHA MT10",
+    "powerdBy": "YAMAHA",
+    "about": "The greatest combinetion of smartness,power and prefiction."
   },
   {
     "_id": "6274be7429246bf095af586b",
-    "price": "$2,810.57",
+    "price": "$6,200",
     "img": "https://buthydro.sirv.com/images/bikes-3.jpg",
-    "age": 37,
-    "name": "Pearson Gibbs",
-    "company": "RECRITUBE",
-    "about": "Eiusmod laborum ea laborum sunt. Reprehenderit dolor fugiat esse enim eu eu mollit sunt ut nulla laboris dolor ad sit. Labore qui enim dolore commodo. Laboris non aliqua cillum eu.\r\n"
-  },
-  {
-    "_id": "6274be74d68ba6330b25496f",
-    "price": "$3,354.57",
-    "img": "https://buthydro.sirv.com/images/bikes-4.jpg",
-    "age": 22,
-    "name": "Ingrid Landry",
-    "company": "ENDIPIN",
-    "about": "Veniam in fugiat excepteur dolor enim tempor. Esse nulla sint consequat elit labore in laboris sint mollit aliquip labore est. Aliqua in sit minim nulla eu duis in proident Lorem. Mollit ex pariatur exercitation in. Dolor dolore eiusmod laboris commodo enim nostrud excepteur esse nostrud do dolor. Officia exercitation labore proident id ad deserunt incididunt irure. Consectetur ad officia elit culpa.\r\n"
-  },
-  {
-    "_id": "6274be74291e02f6bcd9993e",
-    "price": "$1,618.63",
-    "img": "https://buthydro.sirv.com/images/bikes-5.jpg",
-    "age": 39,
-    "name": "Caitlin Cortez",
-    "company": "OMNIGOG",
-    "about": "Eiusmod qui ut id in elit nisi consequat proident et. In excepteur quis elit sunt officia proident elit et qui laboris ullamco nostrud nisi ea. Ut dolore id ea in. Veniam eiusmod esse dolor eiusmod velit occaecat exercitation et officia in voluptate non excepteur Lorem. Irure do enim quis cupidatat sit do commodo et consectetur Lorem consectetur et excepteur aliquip.\r\n"
-  },
-  {
-    "_id": "6274be74e488b3d2e73fecc4",
-    "price": "$2,770.24",
-    "img": "https://buthydro.sirv.com/images/bikes-6.jpg",
-    "age": 22,
-    "name": "Ava Anderson",
-    "company": "BUZZOPIA",
-    "about": "Eiusmod aliqua fugiat exercitation nisi cillum exercitation commodo. Tempor reprehenderit consectetur aliquip sit labore magna reprehenderit adipisicing labore est duis ipsum minim veniam. Reprehenderit exercitation anim mollit adipisicing amet consectetur nostrud. Deserunt anim ullamco cillum nostrud pariatur ut est fugiat exercitation irure. Ipsum ea dolore officia sint.\r\n"
+    "year": 2021,
+    "name": "KAWASAKI VULCAN",
+    "powerdBy": "YAMAHA",
+    "about": "The greatest combinetion of smartness,power and prefiction."
   }
+  
 ]

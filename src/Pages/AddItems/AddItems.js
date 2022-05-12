@@ -1,33 +1,39 @@
 import React from "react";
-import { useForm } from "react-hook-form";
 
 const AddItems = () => {
-  const { register, handleSubmit } = useForm();
-  const onSubmit = (data) => {
-      console.log(data)
-      const url = ``
-      fetch(url, {
-          method: 'POST',
-          header: {
-              'content-type': 'application/json'
-          },
-          body: JSON.stringify(data)
-      })
-      .then(res => res.json())
-      .then(result => {
-          console.log(result);
-      })
-};
+  const handleAddUser = event => {
+    event.preventDefault();
+    const name = event.target.name.value;
+    const email = event.target.email.value;
+
+    const user = {name, email};
+
+    // send data server
+    fetch('http://localhost:5000/user',{
+        method: 'POST',
+        headers: {
+            'content-type': 'application/json'
+        },
+        body: JSON.stringify(user)
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log('success', data)
+        alert('user added successfully!!!');
+        event.target.reset();
+    })
+}
 
   return (
     <div className="w-50 mx-auto my-3">
       <h2 className="text-center">Please Add a Item</h2>
-      <form className="d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
-        <input className="mb-2" placeholder="name" {...register("description")} />
-        <input className="mb-2" placeholder="description" {...register("Name", { required: true, maxLength: 20 })} />
-        <input className="mb-2" placeholder="price" type="number" {...register("price")} />
-        <input className="mb-2" placeholder="Photo URL" type="text" {...register("img")} />
-        <input type="submit" value="Add Service" />
+      <form className="d-flex flex-column" onSubmit={handleAddUser}>
+        <input  />
+        <input className="mb-2" type="text" name="name" placeholder="name" required/>
+        <input className="mb-2" type="text" name="discription" placeholder="description" required />
+        <input className="mb-2" type="number" name="name" placeholder="price"  required/>
+        <input className="mb-2" type="text" name="name" placeholder="Photo URL"  required/>
+        <input type="submit" value="Add Items" />
       </form>
     </div>
   );

@@ -8,6 +8,7 @@ const useFirebase = () => {
     }
     return {
         user,
+        setUser,
         signInWithGoogle,
     }
 }
