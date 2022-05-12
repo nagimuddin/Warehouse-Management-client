@@ -1,10 +1,10 @@
 [
   {
     "_id": "6274be74602fb91f3f0e5e8e",
-    "price": "$5,200",
     "img": "https://buthydro.sirv.com/images/bikes-1.jpg",
-    "year": 2021,
     "name": "BMW T9034 RX",
+    "price": "$5,200",
+    "year": 2021,
     "powerdBy": "BMW",
     "about": "The greatest combinetion of smartness,power and prefiction."
   },

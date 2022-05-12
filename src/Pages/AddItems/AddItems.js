@@ -1,4 +1,5 @@
 import React from "react";
+import './AddItems.css'
 
 const AddItems = () => {
   const handleAddUser = event => {
@@ -26,14 +27,16 @@ const AddItems = () => {
 
   return (
     <div className="w-50 mx-auto my-3">
-      <h2 className="text-center">Please Add a Item</h2>
+      <h2 className="title">Please Add Your Item</h2>
       <form className="d-flex flex-column" onSubmit={handleAddUser}>
-        <input  />
-        <input className="mb-2" type="text" name="name" placeholder="name" required/>
-        <input className="mb-2" type="text" name="discription" placeholder="description" required />
-        <input className="mb-2" type="number" name="name" placeholder="price"  required/>
+        <input className="mb-2" type="text" name="name" placeholder="Email" required/>
+        <input className="mb-2" type="text" name="name" placeholder="Name" required/>
         <input className="mb-2" type="text" name="name" placeholder="Photo URL"  required/>
-        <input type="submit" value="Add Items" />
+        <input className="mb-2" type="text" name="name" placeholder="Powerd By"  required/>
+        <input className="mb-2" type="text" name="name" placeholder="Year"  required/>
+        <input className="mb-2" type="number" name="name" placeholder="Price"  required/>
+        <input className="mb-2" type="text" name="discription" placeholder="About" required />
+        <input className="button" type="submit" value="Add Items" />
       </form>
     </div>
   );
