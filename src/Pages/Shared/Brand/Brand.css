@@ -1,0 +1,10 @@
+.brand-section{
+    background-color: rgb(224, 221, 221);
+    padding: 50px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.brand img{
+    max-width: 100%; 
+}
