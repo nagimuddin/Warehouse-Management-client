@@ -3,8 +3,9 @@
     "_id": "6274be74602fb91f3f0e5e8e",
     "img": "https://buthydro.sirv.com/images/bikes-1.jpg",
     "name": "BMW T9034 RX",
+    "email": "komola@gmail.com",
     "price": "$5,200",
-    "year": 2021,
+    "quantity": 10,
     "powerdBy": "BMW",
     "about": "The greatest combinetion of smartness,power and prefiction."
   },
@@ -12,8 +13,9 @@
     "_id": "6274be7448b01c184ba73b9f",
     "price": "$2,000",
     "img": "https://buthydro.sirv.com/images/bikes-2.jpg",
-    "year": 2021,
+    "quantity": 21,
     "name": "YAMAHA MT10",
+    "email": "komola@gmail.com",
     "powerdBy": "YAMAHA",
     "about": "The greatest combinetion of smartness,power and prefiction."
   },
@@ -21,8 +23,9 @@
     "_id": "6274be7429246bf095af586b",
     "price": "$6,200",
     "img": "https://buthydro.sirv.com/images/bikes-3.jpg",
-    "year": 2021,
+    "quantity": 20,
     "name": "KAWASAKI VULCAN",
+    "email": "komola@gmail.com",
     "powerdBy": "YAMAHA",
     "about": "The greatest combinetion of smartness,power and prefiction."
   }
