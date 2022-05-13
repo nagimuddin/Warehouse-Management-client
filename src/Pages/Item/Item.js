@@ -17,7 +17,7 @@ const Item = ({ item }) => {
       </p>
       <div className="button">
         <Link to="/items">
-         
+         Manage
         </Link>
       </div>
     </div>
