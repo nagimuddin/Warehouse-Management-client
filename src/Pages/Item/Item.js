@@ -3,20 +3,18 @@ import { Link } from "react-router-dom";
 import "./Item.css";
 
 const Item = ({ item }) => {
-  const { img, price, name, year, powerdBy, about } = item;
+  const { img, price, name, powerdBy, about } = item;
   return (
     <div className="item">
       <img src={img} alt="" />
-      <h1>{name}</h1>
-      <h3>Powerd By: {powerdBy}</h3>
-      <h4>Year: {year}</h4>
-      <p>Price: {price}</p>
+      <h1 className="name">{name}</h1>
+      <h3 className="p-by">Powerd By: {powerdBy}</h3>
+      <p className="price">Price: {price}</p>
       <p>
-        {" "}
-        <small>About: {about}</small>
+        <small className="about">About: {about}</small>
       </p>
-      <div className="button">
-        <Link to="/items">
+      <div>
+        <Link to="/items" className="button">
          Manage
         </Link>
       </div>
