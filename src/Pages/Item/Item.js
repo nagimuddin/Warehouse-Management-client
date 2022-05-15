@@ -14,7 +14,7 @@ const Item = ({ item }) => {
         <small className="about">About: {about}</small>
       </p>
       <div>
-        <Link to="/items" className="button">
+        <Link to="/items/:itemId" className="btn btn-danger my-4 px-5">
          Manage
         </Link>
       </div>

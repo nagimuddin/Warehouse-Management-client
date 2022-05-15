@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Item from "../Item/Item";
 import "./Items.css";
 
@@ -21,6 +22,9 @@ const Items = () => {
               <Item key={item._id} item={item}></Item>
             ))}
           </div>
+        </div>
+        <div className="col-12 text-center">
+          <Link Link to='/manage-items' className="btn btn-danger my-4 px-5">Manage Items</Link>
         </div>
       </div>
     </div>

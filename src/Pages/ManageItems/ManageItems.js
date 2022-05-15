@@ -1,5 +1,7 @@
 import React from 'react';
 import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 const ManageItems = () => {
     return (
@@ -20,7 +22,7 @@ const ManageItems = () => {
               </ListGroup>
               <Card.Body className="text-center">
                 <Card.Link className="btn btn-danger px-45 my-2" >Delete Items</Card.Link>
-                <Card.Link to="/add-items" className="btn btn-info px-5 my-2" >Add Items</Card.Link>
+                <Link className="btn btn-info px-5 my-2" to="/add-items" >Add Items</Link>
               </Card.Body>
             </Card>
           </div>
