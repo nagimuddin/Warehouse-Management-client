@@ -33,7 +33,7 @@ const AddItems = () => {
         <input className="mb-2" type="text" name="name" placeholder="Name" required/>
         <input className="mb-2" type="text" name="name" placeholder="Photo URL"  required/>
         <input className="mb-2" type="text" name="name" placeholder="Powerd By"  required/>
-        <input className="mb-2" type="text" name="name" placeholder="Year"  required/>
+        <input className="mb-2" type="text" name="name" placeholder="Quantity"  required/>
         <input className="mb-2" type="number" name="name" placeholder="Price"  required/>
         <input className="mb-2" type="text" name="discription" placeholder="About" required />
         <input className="additem-button" type="submit" value="Add Items" />

@@ -13,6 +13,7 @@ import Header from "./Pages/Shared/Header/Header";
 import Items from "./Pages/Items/Items";
 import ItemDetails from "./Pages/ItemDetails/ItemDetails";
 import Register from "./Pages/Login/Register/Register";
+import MyItems from "./Pages/MyItems/MyItems";
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
               <AddItems></AddItems>
             </RequireAuth>
           }></Route>
-        <Route path="/item/:itemId"element={
+        <Route path="/items/:itemId"element={
             <RequireAuth>
               <ItemDetails></ItemDetails>
             </RequireAuth>
@@ -42,6 +43,11 @@ function App() {
         <Route path="/manage-items"element={
             <RequireAuth>
               <ManageItems></ManageItems>
+            </RequireAuth>
+          }></Route>
+        <Route path="/my-items"element={
+            <RequireAuth>
+              <MyItems></MyItems>
             </RequireAuth>
           }></Route>
           <Route path="*" element={<NotFound></NotFound>}></Route>

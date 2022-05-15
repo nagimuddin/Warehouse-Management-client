@@ -1,17 +1,17 @@
 [
   {
-    "_id": "6274be74602fb91f3f0e5e8e",
+    "_id": "627f80add80a77a5e6a791f9",
     "img": "https://buthydro.sirv.com/images/bikes-1.jpg",
-    "name": "BMW T9034 RX",
+    "name": "DUCATI HYPER 950",
     "email": "komola@gmail.com",
     "price": "$5,200",
     "quantity": 10,
-    "powerdBy": "BMW",
+    "powerdBy": "DUCATI",
     "about": "The greatest combinetion of smartness,power and prefiction."
   },
   {
-    "_id": "6274be7448b01c184ba73b9f",
-    "price": "$2,000",
+    "_id": "627f80ad2e89c5a276e31439",
+    "price": "$5,200",
     "img": "https://buthydro.sirv.com/images/bikes-2.jpg",
     "quantity": 21,
     "name": "YAMAHA MT10",
@@ -20,13 +20,43 @@
     "about": "The greatest combinetion of smartness,power and prefiction."
   },
   {
-    "_id": "6274be7429246bf095af586b",
-    "price": "$6,200",
+    "_id": "627f80addcd762180889d81d",
+    "price": "$4,200",
     "img": "https://buthydro.sirv.com/images/bikes-3.jpg",
+    "quantity": 20,
+    "name": "HONDA CB500X ABS",
+    "email": "komola@gmail.com",
+    "powerdBy": "YAMAHA",
+    "about": "The greatest combinetion of smartness,power and prefiction."
+  },
+  {
+    "_id": "627f80add739971d792fe190",
+    "price": "$6,200",
+    "img": "https://buthydro.sirv.com/images/bikes-4.jpg",
     "quantity": 20,
     "name": "KAWASAKI VULCAN",
     "email": "komola@gmail.com",
     "powerdBy": "YAMAHA",
+    "about": "The greatest combinetion of smartness,power and prefiction."
+  },
+  {
+    "_id": "627f80ad7693383f17918359",
+    "price": "$8,700",
+    "img": "https://buthydro.sirv.com/images/bikes-5.jpg",
+    "quantity": 20,
+    "name": "BMW S1002 RX",
+    "email": "komola@gmail.com",
+    "powerdBy": "BMW",
+    "about": "The greatest combinetion of smartness,power and prefiction."
+  },
+  {
+    "_id": "627f80ad247f0b7c359edd94",
+    "price": "$6,200",
+    "img": "https://buthydro.sirv.com/images/bikes-3.jpg",
+    "quantity": 20,
+    "name": "KTM RC 390 BASE",
+    "email": "komola@gmail.com",
+    "powerdBy": "KTM",
     "about": "The greatest combinetion of smartness,power and prefiction."
   }
   
