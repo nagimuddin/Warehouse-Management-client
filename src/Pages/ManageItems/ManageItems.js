@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, ListGroup, ListGroupItem } from 'react-bootstrap';
+import { Card, Form, ListGroup, ListGroupItem } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
@@ -21,8 +21,9 @@ const ManageItems = () => {
                 <ListGroupItem>About: The greatest combinetion of smartness,power and prefiction.</ListGroupItem>
               </ListGroup>
               <Card.Body className="text-center">
-                <Card.Link className="btn btn-danger px-45 my-2" >Delete Items</Card.Link>
-                <Link className="btn btn-info px-5 my-2" to="/add-items" >Add Items</Link>
+                <Card.Link className="btn btn-danger px-5 my-2 w-100" >Delete Items</Card.Link>
+                <Form.Control type="number" placeholder="Password" />
+                <Link className="btn btn-info px-5 my-2 w-100" to="/add-items" >Add Items</Link>
               </Card.Body>
             </Card>
           </div>

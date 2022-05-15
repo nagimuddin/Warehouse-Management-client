@@ -38,13 +38,8 @@ const Header = () => {
             {user ? (
               <>
                 <Nav.Link
-                  className="ms-auto d-flex justify-content-end"
-                  as={Link}
-                  to="/items"
-                >
-                  Items
-                </Nav.Link>
-                <Nav.Link as={Link} to="/add-items">
+                className="ms-auto d-flex justify-content-end"
+                as={Link} to="/add-items">
                   Add Items
                 </Nav.Link>
                 <Nav.Link as={Link} to="/my-items">

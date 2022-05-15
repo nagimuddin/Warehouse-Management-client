@@ -1,4 +1,6 @@
 import React from "react";
+import { Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const MyItems = () => {
   return (
@@ -28,6 +30,9 @@ const MyItems = () => {
                 <p className="card-text">
                 About: The greatest combinetion of smartness,power and prefiction.
                 </p>
+                <Card.Link className="btn btn-danger px-5 my-2 w-100" >Delete Items</Card.Link>
+                <Link className="btn btn-info px-5 my-2 w-100" to="/add-items" >Add Items</Link>
+
               </div>
             </div>
           </div>
