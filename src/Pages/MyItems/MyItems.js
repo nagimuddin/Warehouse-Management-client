@@ -1,44 +1,93 @@
-import React from "react";
-import { Card } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 const MyItems = () => {
-  return (
-    <div className="container">
-      <div className="row">
-        <div className="col-12"></div>
-        <div className="card mb-3"/>
-          <div className="row g-0">
-            <div className="col-md-4">
-              <img src="https://buthydro.sirv.com/images/bikes-2.jpg" className="img-fluid rounded-start" alt="..." />
-            </div>
-            <div className="col-md-8">
-              <div className="card-body">
-                <h5 className="card-title">DUCATI HYPER 950</h5>
-                <p className="card-text">
-                  <small className="text-muted">Powerd By: DUCATI</small>
-                </p>
-                <p className="card-text">
-                  <small className="text-muted">Price: $5,200</small>
-                </p>
-                <p className="card-text">
-                  <small className="text-muted">Quantity: 20</small>
-                </p>
-                <p className="card-text">
-                  <small className="text-muted">id: 627f80add80a77a5e6a791f9</small>
-                </p>
-                <p className="card-text">
-                About: The greatest combinetion of smartness,power and prefiction.
-                </p>
-                <Card.Link className="btn btn-danger px-5 my-2 w-100" >Delete Items</Card.Link>
-                <Link className="btn btn-info px-5 my-2 w-100" to="/add-items" >Add Items</Link>
+    const [user] = useAuthState(auth);
+    const [items, setItems] = useState([]);
+    const navigate = useNavigate();
 
-              </div>
+    const navigateToInventoryDetails = (id) => {
+        navigate(`/products/1@${id}`);
+    }
+
+    useEffect(() => {
+        const getItems = async () => {
+            const email = user.email;
+            const url = `https://gymactive.herokuapp.com/newitems?email=${email}`;
+            const { data } = await axios.get(url);
+            setItems(data);
+        }
+        getItems();
+    }, [user]);
+
+    const handelDelete = id => {
+        const process = window.confirm("Are you sure you want to delete this item?");
+
+        if (process) {
+            const url = `https://gymactive.herokuapp.com/newitems/${id}`;
+            fetch(url, {
+                method: "DELETE",
+            })
+                .then(res => res.json())
+                .then(result => {
+                    console.log(result);
+                    setItems(items.filter(item => item._id !== id));
+                });
+        }
+    }
+
+    return (
+        <>
+            <div className='container mx-auto py-24'>
+                <div className='flex flex-wrap'>
+                    {
+                        items.map((inventory) => {
+                            return (
+                                <div key={inventory._id} className='w-full md:w-1/2 xl:w-1/3 px-4 mt-8'>
+                                    <div className='rounded-xl relative'>
+                                        <img
+                                            className='rounded-xl w-full h-[270px] object-cover'
+                                            src={inventory.image}
+                                            alt=''
+                                        />
+                                        <span className='py-1 px-3 absolute bottom-4 left-4 inline-block uppercase text-sm font-semibold rounded bg-indigo-600 text-white'>
+                                            ${inventory.price}
+                                        </span>
+                                    </div>
+                                    <div className='inventory-content mt-8 py-6 px-8 bg-[#F6F6F6] rounded-[10px] transition-all ease-in-out duration-300 hover:bg-indigo-600'>
+                                        <ul className='flex flex-wrap items-center gap-4'>
+                                            <li>
+                                                <span className='font-semibold text-black'>Supplier:</span>
+                                                <span className='ml-2 text-[#777777]'>{inventory.supplier}</span>
+                                            </li>
+                                            <li>
+                                                <span className='font-semibold text-black'>Quantity:</span>
+                                                <span className='ml-2 text-[#777777]'>{inventory.quantity}</span>
+                                            </li>
+                                        </ul>
+                                        <h3 className='mt-4 font-bold text-xl text-black hover:text-indigo-600 cursor-pointer transition-all ease-in-out duration-300'>
+                                            <span onClick={() => navigateToInventoryDetails(inventory._id)}>{inventory.name}</span>
+                                        </h3>
+                                        <p className='mt-4 text-[#777777]'>
+                                            {inventory.content.slice(0, 100)}
+                                        </p>
+                                        <div className="flex flex-wrap gap-4 mt-4">
+                                            <button onClick={() => navigateToInventoryDetails(inventory._id)} className="button button-black">Manage</button>
+                                            <button onClick={() => handelDelete(inventory._id)} className="button button-indigo">Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            );
+                        })
+                    }
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-  );
+        </>
+    );
 };
 
 export default MyItems;

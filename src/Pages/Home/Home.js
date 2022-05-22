@@ -1,18 +1,18 @@
-import React from 'react';
-import Bennar from '../Shared/Bennar/Bennar';
-import Items from '../Items/Items';
-import Brand from '../Shared/Brand/Brand';
-import Display from '../Shared/Display/Display';
+import React from "react";
+import Banner from "../../Components/Banner/Banner";
+import Testimonial from "../../Components/Testimonial/Testimonial";
+import Products from "../Products/Products";
+import BlogComponent from "../../Components/BlogComponent/BlogComponent";
 
 const Home = () => {
-    return (
-        <div>
-            <Bennar></Bennar>
-            <Items></Items>
-            <Display></Display>
-            <Brand></Brand>
-        </div>
-    );
+  return (
+    <>
+      <Banner />
+      <Products />
+      <Testimonial />
+      <BlogComponent />
+    </>
+  );
 };
 
 export default Home;

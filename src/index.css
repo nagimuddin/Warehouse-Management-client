@@ -1,6 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .button {
+    @apply py-4 px-8 font-bold rounded-md relative z-10 transition-all ease-linear duration-300;
+  }
+
+  .button-indigo {
+    @apply bg-indigo-600 text-white hover:bg-slate-900 hover:text-white;
+  }
+
+  .button-black {
+    @apply bg-slate-900 text-white hover:bg-slate-700 hover:text-white;
+  }
+
+  .button-outline-white {
+    @apply bg-transparent text-white border border-solid border-white hover:bg-indigo-600 hover:text-white hover:border-red-600;
+  }
+
+  .inventory-content:hover span {
+    @apply text-white transition-all ease-in-out duration-300;
+  }
+
+  .inventory-content:hover h3 {
+    @apply text-white transition-all ease-in-out duration-300;
+  }
+
+  .inventory-content:hover p {
+    @apply text-white transition-all ease-in-out duration-300;
+  }
+
+  .active {
+    @apply bg-indigo-600 text-white;
+  }
+
+  .label-control {
+    @apply text-sm font-medium leading-none text-gray-800;
+  }
+
+  .input-control {
+    @apply bg-gray-200 border rounded focus:outline-none text-xs font-medium leading-none text-gray-800 py-3 w-full pl-3 mt-2;
+  }
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: -apple-system, BlinkMacSystemFont, 'Jost', 'Open Sans', 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -10,4 +58,40 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#loading-2{
+  position:relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width:30px;
+  height:30px;
+  background:#3498db;
+  border-radius:50px;
+  animation: loading-2 1.5s infinite linear;
+}
+#loading-2:after{
+  position:absolute;
+  width:50px;
+  height:50px;
+  border-top:10px solid #9b59b6;
+  border-bottom:10px solid #9b59b6;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  border-radius:50px;
+  content:'';
+  top:-20px;
+  left:-20px;
+  animation: loading-2-after 1.5s infinite linear;
+}
+@keyframes loading-2 {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(180deg);background:#2ecc71;}
+  100% {transform: rotate(360deg);}
+}
+@keyframes loading-2-after {
+  0% {border-top:10px solid #9b59b6;border-bottom:10px solid #9b59b6;}
+  50% {border-top:10px solid #3498db;border-bottom:10px solid #3498db;}
+  100% {border-top:10px solid #9b59b6;border-bottom:10px solid #9b59b6;}
 }

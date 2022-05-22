@@ -1,14 +1,14 @@
 import React from 'react';
-import notfound from '../../images/notfound.png';
-import './NotFound.css'
+import { Link } from 'react-router-dom';
 
 const NotFound = () => {
     return (
-        <div className='error-container'>
-            <h1 className='error-text'>OPS!!!</h1>
-            <h2 className='error-text'>Your searching rout is not exist. <br /> Please search a valid path!</h2>
-            <img className='error-img' src={notfound} alt="" />
-        </div>
+        <section className='py-[150px] text-center'>
+            <h3 className='mb-0 text-[100px] font-light text-[#222423] tracking-[20px] uppercase leading-none'>Oops!</h3>
+            <h2 className='text-[170px] font-bold text-indigo-600 leading-[170px] uppercase'>404</h2>
+            <h4 className='mb-8 font-light text-[#222423] text-[42px] uppercase'>Page Not Found</h4>
+            <Link className='button button-indigo' to='/'>Back To Home</Link>
+        </section>
     );
 };
 
