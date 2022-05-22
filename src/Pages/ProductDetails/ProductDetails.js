@@ -11,12 +11,12 @@ const ProductDetails = () => {
 
     useEffect(() => {
         if (parseInt(indexNumber) === 2) {
-            const url = `https://pacific-retreat-16456.herokuapp.com/inventory/${itemId}`;
+            const url = `https://pacific-retreat-16456.herokuapp.com//inventory/${itemId}`;
             fetch(url)
                 .then(res => res.json())
                 .then(data => setProduct(data));
         } else if (parseInt(indexNumber) === 1) {
-            const url = `https://pacific-retreat-16456.herokuapp.com/newitems/${itemId}`;
+            const url = `https://pacific-retreat-16456.herokuapp.com//newitems/${itemId}`;
             fetch(url)
                 .then(res => res.json())
                 .then(data => setProduct(data));
@@ -29,7 +29,7 @@ const ProductDetails = () => {
             let newSold = parseInt(sold) + 1;
             const newObject = { ...product, quantity: newQuantity, sold: newSold };
             setProduct(newObject);
-            fetch(`https://pacific-retreat-16456.herokuapp.com/update-quantity/${id}`, {
+            fetch(`https://pacific-retreat-16456.herokuapp.com//update-quantity/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ const ProductDetails = () => {
         let newQuantity = parseInt(quantity) + 1;
         const newObject = { ...product, quantity: newQuantity };
         setProduct(newObject);
-        fetch(`https://pacific-retreat-16456.herokuapp.com/update-quantity/${id}`, {
+        fetch(`https://pacific-retreat-16456.herokuapp.com//update-quantity/${id}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'

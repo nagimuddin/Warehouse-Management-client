@@ -29,7 +29,7 @@ const AddItems = () => {
       .then((res) => res.json())
       .then(result => console.log(result));
 
-    const { data } = axios.post('https://pacific-retreat-16456.herokuapp.com/newitems',
+    const { data } = axios.post('https://pacific-retreat-16456.herokuapp.com//newitems',
       { ...myData, email: user.email, sold: 0 });
   };
 

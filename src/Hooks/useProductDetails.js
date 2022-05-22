@@ -4,7 +4,7 @@ const useProductDetail = productId => {
     const [product, setProduct] = useState({});
 
     useEffect(() => {
-        const url = `https://pacific-retreat-16456.herokuapp.com/inventory/${productId}`;
+        const url = `https://pacific-retreat-16456.herokuapp.com//inventory/${productId}`;
         console.log(url);
         fetch(url)
             .then(res => res.json())
