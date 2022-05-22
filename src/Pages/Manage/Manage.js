@@ -11,7 +11,7 @@ const Manage = () => {
     const process = window.confirm("Are you sure you want to delete this item?");
 
     if (process) {
-      const url = `https://gymactive.herokuapp.com/inventory/${id}`;
+      const url = `https://pacific-retreat-16456.herokuapp.com/inventory/${id}`;
 
       fetch(url, {
         method: "DELETE",
