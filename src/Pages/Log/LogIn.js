@@ -43,7 +43,7 @@ const LogIn = () => {
 
     if (email || password) {
       await signInWithEmailAndPassword(email, password);
-      const { data } = await axios.post("https://pacific-retreat-16456.herokuapp.com//login", { email });
+      const { data } = await axios.post("https://automobilereact.herokuapp.com/login", { email });
       console.log(data);
       localStorage.setItem("accessToken", data.token);
       await new Promise((resolve) => setTimeout(resolve, 1000));

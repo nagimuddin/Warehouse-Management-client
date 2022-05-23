@@ -16,7 +16,7 @@ const MyItems = () => {
     useEffect(() => {
         const getItems = async () => {
             const email = user.email;
-            const url = `https://pacific-retreat-16456.herokuapp.com//newitems?email=${email}`;
+            const url = `https://automobilereact.herokuapp.com/newitems?email=${email}`;
             const { data } = await axios.get(url);
             setItems(data);
         }
@@ -27,7 +27,7 @@ const MyItems = () => {
         const process = window.confirm("Are you sure you want to delete this item?");
 
         if (process) {
-            const url = `https://pacific-retreat-16456.herokuapp.com//newitems/${id}`;
+            const url = `https://automobilereact.herokuapp.com/newitems/${id}`;
             fetch(url, {
                 method: "DELETE",
             })
