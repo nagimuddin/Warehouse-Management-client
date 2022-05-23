@@ -24,7 +24,7 @@ const Manage = () => {
   }
 
   const navigateToProductDetails = (id) => {
-    navigate(`/product/2@${id}`);
+    navigate(`/products/2@${id}`);
   };
 
   return (

@@ -27,7 +27,7 @@ const AddItems = () => {
       .then((res) => res.json())
       .then((result) => console.log(result));
 
-    const { data } = axios.post("https://automobilereact.herokuapp.com/newitems", {
+    const { data } = axios.post("https://automobilereact.herokuapp.com/add-item", {
       ...myData,
       email: user.email,
       sold: 0,

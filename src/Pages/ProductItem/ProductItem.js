@@ -7,7 +7,7 @@ const ProductItem = () => {
   const navigate = useNavigate();
 
   const navigateToProductDetails = (id) => {
-    navigate(`/product/2@${id}`);;
+    navigate(`/products/2@${id}`);;
   }
 
   return (
