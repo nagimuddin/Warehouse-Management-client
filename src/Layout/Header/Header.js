@@ -2,7 +2,7 @@
 import { Fragment, React } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
-import logo from "../../logo.png";
+import logo from "../../Images/Logo.png";
 import { Link, NavLink } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import auth from "../../firebase.init";
@@ -30,7 +30,7 @@ const Header = () => {
                   <div className='flex items-center'>
                     <div className='flex-shrink-0'>
                       <Link to='/'>
-                        <img className='h-8 w-8' src={logo} alt='logo' />
+                        <img className='h-12 w-20' src={logo} alt='logo' />
                       </Link>
                     </div>
                     <div className='hidden md:block'>

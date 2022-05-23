@@ -7,11 +7,11 @@ const ProductDetails = () => {
     const [indexNumber, itemId] = productId.split('@');
     console.log(indexNumber, itemId);
     const [product, setProduct] = useState({});
-    const { _id, name, content, image, price, supplier, quantity, sold } = product;
+    const { _id, name, about, img, price, powerdBy, quantity, sold } = product;
 
     useEffect(() => {
         if (parseInt(indexNumber) === 2) {
-            const url = `https://automobilereact.herokuapp.com/inventory/${itemId}`;
+            const url = `https://automobilereact.herokuapp.com/product/${itemId}`;
             fetch(url)
                 .then(res => res.json())
                 .then(data => setProduct(data));
@@ -61,14 +61,14 @@ const ProductDetails = () => {
                 <div className="container max-w-7xl mx-auto">
                     <div className="flex flex-wrap">
                         <div className="w-full lg:w-1/2 p-4">
-                            <img src={image} alt="" className="w-full h-[580px] object-cover" />
+                            <img src={img} alt="" className="w-full h-[580px] object-cover" />
                         </div>
                         <div className="w-full lg:w-1/2 p-4">
                             <p className="text-xl font-medium flex flex-wrap gap-4"><strong>Product Id:</strong> <span className='text-md font-open text-gray-500'>{_id}</span></p>
                             <h2 className="text-3xl font-bold flex flex-wrap gap-4 mt-4"><strong>Product Name:</strong> <span>{name}</span></h2>
-                            <p className="text-xl text-gray-800 flex flex-wrap gap-4 mt-4"><strong>Supplier:</strong> <span className='text-md font-open'>{supplier}</span></p>
+                            <p className="text-xl text-gray-800 flex flex-wrap gap-4 mt-4"><strong>Powerd By:</strong> <span className='text-md font-open'>{powerdBy}</span></p>
                             <p className="text-xl text-gray-800 flex flex-wrap gap-4 mt-4"><strong>Price:</strong> <span className='text-md font-open'>${price}</span></p>
-                            <p className="text-xl text-gray-800 flex gap-4 mt-4"><strong>Product Description:</strong> <span className='text-md font-open'>{content}</span></p>
+                            <p className="text-xl text-gray-800 flex gap-4 mt-4"><strong>Product Description:</strong> <span className='text-md font-open'>{about}</span></p>
                             <p className="text-xl text-gray-800 flex flex-wrap gap-4 mt-4"><strong>Quantity:</strong> <span className='text-md font-open'>{quantity}</span></p>
                             <p className="text-xl text-gray-800 flex flex-wrap gap-4 mt-4"><strong>Sold:</strong> <span className='text-md font-open'>{sold}</span></p>
                             <div className="flex flex-wrap gap-4 mt-4">
