@@ -1,6 +1,6 @@
-# **GymActive - Gym Equipment Storage Website**
+# **Bike Distribute Agent Website**
 
-# FireBase Live [Project Link](https://gymactivereact.web.app/).
+# FireBase Live [Project Link](https://automobile-distribute-agent.web.app/).
 
 # *List Of Component*
 
@@ -25,4 +25,3 @@
 - **React Firebase Hook**
 - **React Form Hook**
 - **react-toastify**
-- **Sweetalart2-react-content**

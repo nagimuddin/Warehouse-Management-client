@@ -10,11 +10,11 @@ const QueAns = () => {
                     <Disclosure>
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-red-100 px-4 py-2 text-left text-md font-medium text-red-900 hover:bg-red-200 focus:outline-none focus-visible:ring focus-visible:ring-red-500 focus-visible:ring-opacity-75">
+                                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-indigo-100 px-4 py-4 text-left text-md font-medium text-indigo-900 hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75">
                                     <span><strong>Question #1:</strong> What is the difference between javascript and nodejs ?</span>
                                     <ChevronUpIcon
                                         className={`${open ? 'rotate-180 transform' : ''
-                                            } h-5 w-5 text-red-900`}
+                                            } h-5 w-5 text-indigo-900`}
                                     />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-md text-gray-500">
@@ -30,11 +30,11 @@ const QueAns = () => {
                     <Disclosure as="div" className="mt-2">
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-red-100 px-4 py-2 text-left text-sm font-medium text-red-900 hover:bg-red-200 focus:outline-none focus-visible:ring focus-visible:ring-red-500 focus-visible:ring-opacity-75">
+                                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-indigo-100 px-4 py-4 text-left text-sm font-medium text-indigo-900 hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75">
                                     <span><strong>Question #2:</strong> What is the differences between SQL and NOSQL databases?</span>
                                     <ChevronUpIcon
                                         className={`${open ? 'rotate-180 transform' : ''
-                                            } h-5 w-5 text-red-900`}
+                                            } h-5 w-5 text-indigo-900`}
                                     />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-md text-gray-500">
@@ -65,11 +65,11 @@ const QueAns = () => {
                     <Disclosure as="div" className="mt-2">
                         {({ open }) => (
                             <>
-                                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-red-100 px-4 py-2 text-left text-sm font-medium text-red-900 hover:bg-red-200 focus:outline-none focus-visible:ring focus-visible:ring-red-500 focus-visible:ring-opacity-75">
+                                <Disclosure.Button className="flex w-full justify-between rounded-lg bg-indigo-100 px-4 py-4 text-left text-sm font-medium text-indigo-900 hover:bg-indigo-200 focus:outline-none focus-visible:ring focus-visible:ring-indigo-500 focus-visible:ring-opacity-75">
                                     <span><strong>Question #3:</strong> What is the purpose of JWT and how does it work?</span>
                                     <ChevronUpIcon
                                         className={`${open ? 'rotate-180 transform' : ''
-                                            } h-5 w-5 text-red-900`}
+                                            } h-5 w-5 text-indigo-900`}
                                     />
                                 </Disclosure.Button>
                                 <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
