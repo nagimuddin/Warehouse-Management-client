@@ -7,14 +7,13 @@ const ProductItem = () => {
   const navigate = useNavigate();
 
   const navigateToProductDetails = (id) => {
-    navigate(`/products/2@${id}`);;
+    navigate(`/product/2@${id}`);;
   }
 
   return (
     <>
       {
         products.map((product) => {
-          console.log(product);
           return(
             <div key={product._id} className='w-full md:w-1/2 xl:w-1/3 px-4 mt-8'>
               <div className='rounded-xl relative'>

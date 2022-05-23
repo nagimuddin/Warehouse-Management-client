@@ -23,7 +23,7 @@ const Manage = () => {
     }
   }
 
-  const navigateToInventoryDetails = (id) => {
+  const navigateToProductDetails = (id) => {
     navigate(`/product/2@${id}`);
   };
 
@@ -53,7 +53,7 @@ const Manage = () => {
                 <div className='inventory-content mt-8 md:mt-0 py-6 px-8 bg-[#F6F6F6] rounded-[10px] md:rounded-r-[10px] md:rounded-l-none transition-all ease-in-out duration-300 hover:bg-slate-700'>
                 <h3 className='mb-4 font-bold text-xl text-black hover:text-indigo-600 transition-all ease-in-out duration-300'>
                     <button
-                      onClick={() => navigateToInventoryDetails(product._id)}>
+                      onClick={() => navigateToProductDetails(product._id)}>
                       {product.name}
                     </button>
                   </h3>
@@ -80,7 +80,7 @@ const Manage = () => {
                   </p>
                   <div className="mt-5 flex flex-wrap gap-4">
                   <button
-                    onClick={() => navigateToInventoryDetails(product._id)}
+                    onClick={() => navigateToProductDetails(product._id)}
                     className='button button-black inline-block shadow-lg'>
                     Manage
                   </button>
